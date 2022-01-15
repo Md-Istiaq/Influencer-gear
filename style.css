@@ -1,0 +1,230 @@
+/* Link of Google Font*/
+body{
+    
+font-family: 'Poppins', sans-serif;
+}
+/* Styles for nav manu start */
+main{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+menu a{
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+}
+/* styles for nav manu end hear */
+/* styles for main section starts hear*/
+
+/*-----------
+styles applied in First container
+-------------*/
+.first-section{
+    display: flex;
+    padding-left: 104px;
+    justify-content: center;
+    align-items: center;
+}
+/*--------------
+Text animation
+--------------*/
+.Heading{
+   font-size: 52px;
+   margin-bottom: 10px;
+   transition: transform 2s;
+}
+.Heading:hover{
+    transform: rotate3d(0, 1, 0, 360deg);
+}
+
+/* -----------
+image animation
+-------------*/
+  .animation img{
+    Width:440px;
+    Height:414px;
+    background-image: url(images/Circle\ design.svg);
+    margin-left: 50px;
+    transition:  transform 2s;   
+}
+.animation img:hover {
+    transform: rotate3d(0, 1, 0, 360deg);
+    transform-origin: center;  
+}
+
+/*----------
+Prebook now button
+-----------*/
+article button{
+    background-color: #E02C6D;
+    width: 196px;
+    height: 44px;
+    border-radius: 41px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+/* ------------
+styels for first container end hear
+--------------*/
+/* Popular Collection section styles start hear*/
+.section-heading{
+    text-align: center ;
+}
+.second-section{
+    margin-top: 150px;
+    }
+.popular-collections{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 10px;
+   grid-row-gap: 13px;
+   background-color: whitesmoke;
+   }
+  .collection{
+   background-color: white;
+    border-radius: 5px;
+  }
+  .product img{
+    width: 300px;
+    height: 256px;
+}
+.product-name{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+}
+.product-price{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    margin-top: 5px;
+    margin-bottom: 5px;  
+}
+.product-info{
+    display: flex;
+    align-items: center; 
+}
+span{
+    color: #5E6366;
+    padding-left: 10px;
+}
+.product-ratings{
+    color: #FB8200;
+    font-size: 10px;
+}
+.product-delivery{
+    color: #5E6366;
+}
+#see-more-button{
+    color:  #E02C6D;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: white;
+    border: white;
+    float: right;
+}
+/*-------------------
+styels for soial media sites section
+--------------------*/
+.social-media-sites{
+    display: flex;
+}
+.social-media-sites img{
+    Width:680px;
+    Height:400px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.social-media-heading .heading-2{
+    font-size: 52px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/* Styels for menu section end hear */
+/* Styles for footer section starts hear*/
+footer{
+    background: #0A0826;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   }
+   .fab{
+       padding-left: 10px;
+   }
+   .join-now-button{
+    background-color:  #E02C6D;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+   }
+  
+   /*Styles for footer section ends here*/
+
+
+   /*-----------------------------
+   --------Media Queries---------
+   ----------------------------*/
+   /*---------------
+   Mobile devices
+   ---------------*/
+   @media only screen and (max-width:688px)  {
+       .animation img{
+        Width:220px;
+        Height:214px;
+        margin-right: 60px;
+        margin-top: 15px;
+       }
+       .first-section{
+           margin-right: 60px;
+       }
+       .first-section article p button{
+           text-align: center;
+       }
+       .Heading{
+           text-align: center;
+           width: 100%;
+           font-size: 26px;
+       }
+        .popular-collections{
+            grid-template-columns: repeat(1, 1fr);
+            margin-left: 20px;
+        }
+        .social-media-sites article img{
+            width: 100%;
+            height: 300px;
+        }
+        .first-section, .social-media-sites{
+            flex-direction: column;
+        }
+        .social-media-sites{
+            text-align: center;
+            width: 100%;
+        }
+        footer{
+            width: 100%;
+        }
+   }
+   /*----------------------------------
+   -----------Tablet Devices-----------
+   ----------------------------------*/
+   @media only screen and (min-width:688px) and (max-width:992px){
+       .popular-collections{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 40px;
+       }
+       .social-media-sites{
+           flex-direction: column;
+       }
+   }
