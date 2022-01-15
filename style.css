@@ -95,6 +95,7 @@ styels for first container end hear
     width: 300px;
     height: 256px;
 }
+/*------Products style start---------*/
 .product-name{
     font-weight: 500;
     font-size: 28px;
@@ -124,6 +125,8 @@ span{
 .product-delivery{
     color: #5E6366;
 }
+/* --------product style end-----------*/
+/*----------see more button start ----------*/
 #see-more-button{
     color:  #E02C6D;
     font-size: 25px;
@@ -133,8 +136,9 @@ span{
     border: white;
     float: right;
 }
+/* ----------see more button style end------*/
 /*-------------------
-styels for soial media sites section
+styels for soial media sites section start
 --------------------*/
 .social-media-sites{
     display: flex;
@@ -151,6 +155,7 @@ styels for soial media sites section
     margin-bottom: 10px;
     margin-top: 10px;
 }
+/*---------------styles for social media section end---------*/
 /* Styels for menu section end hear */
 /* Styles for footer section starts hear*/
 footer{
@@ -203,7 +208,7 @@ footer{
         }
         .social-media-sites article img{
             width: 100%;
-            height: 300px;
+            height: 220px;
         }
         .first-section, .social-media-sites{
             flex-direction: column;
@@ -227,4 +232,7 @@ footer{
        .social-media-sites{
            flex-direction: column;
        }
+   }
+   @media only screen and {
+       
    }
